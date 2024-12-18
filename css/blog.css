@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+    width: 6px;
+    border-radius: 50px;
+    background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #2bcbba;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Root Section */
+:root {
+    --primary-color: #2bcbba;
+    --dark-color: #212121;
+    --light-color: #f1f2f6;
+    --red-color: #ff4757;
+    --grey-color: #687080;
+
+    --primary-font: 'Poppins', serif;
+    --secondary-font: 'Prata', serif;
+
+    --transition-color: color 0.3s ease;
+    --transition-backgrooud-color: background-color 0.3s ease;
+    --transition-color: color 0.3s ease;
+    --box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%);
+}
+
+
+/* Re- Used Css */
+section {
+    padding: 3rem 0;
+}
+.custom-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    border-radius: 3px;
+    font-weight: 500;
+    border: 1px solid var(--dark-color);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.custom-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--dark-color);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    color: var(--light-color);
+}
+
+.custom-btn:hover::before {
+    width: 100%;
+}
+.title {
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    padding-bottom: 3rem;
+}
+.card {
+    border: none;
+    background-color: transparent;
+}
+.card-body {
+    padding-left: 0;
+}
+.slick-dots li button:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    margin-top: 1.5rem;
+}
+.slick-dots li.slick-active button:before {
+    background-color: var(--primary-color);
+    opacity: 1;
+}
+strike {
+    color: #bebebe;
+}
+/* Custom css */
+/* Header & navbar section */
+.navbar {
+    box-shadow: var(--box-shadow);
+    position: relative;
+    z-index: 999999999;
+}
+
+#logo {
+    font-size: 2.25rem;
+    font-family: var(--secondary-font);
+}
+
+.offcanvas-title {
+    font-family: var(--secondary-font);
+}
+
+.navbar-toggler,
+.cart-btn {
+    font-size: 1.5rem;
+    transform: var(--transition-color);
+}
+
+.navbar-toggler:hover,
+.cart-btn:hover {
+    color: var(--light-color);
+}
+
+.nav-item .nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: var(--transition-color);
+}
+
+.nav-item .nav-link:hover {
+    color: var(--light-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.form-control {
+    height: 40px;
+    border: none;
+    border-radius: 0;
+    border: 1px solid var(--dark-color);
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: border 0.2s ease;
+}
+
+.form-control:focus {
+    border: 1px solid #fff;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.search-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    transform: var(--transition-color);
+}
+
+.search-btn:hover {
+    color: var(--light-color);
+}
+
+.red {
+    height: 100px;
+    width: 100%;
+}
+.red img {
+    width: 75px;
+}
+
+.red h6 {
+    color: var(--grey-color);
+    font-weight: 400;
+}
+
+.cart-btn-grp {
+    height: 100px;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.subtotal {
+    border-top: 1px solid var(--grey-color);
+}
+
+.cart-btn-grp button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark-color);
+    color: #fff;
+    border: none;
+    margin-bottom: 0.75rem;
+    border-radius: px;
+}
+
+.cart-btn-grp .view {
+    background-color: #e7e7e7;
+}
+.inner-wrap {
+    position: relative;
+    overflow: hidden;
+
+}
+.layer-img .second {
+    position: absolute;
+    bottom : 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.product-widget {
+    position: absolute;
+    z-index: 5;
+    bottom: -25%;
+    width: 100%;
+    text-align: center;
+    transition: bottom 0.4s ease-in-out;
+}
+.product-widget i {
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    background-color: rgb(255 255 255 / 70%);
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: var(--transition-backgrooud-color), var(--transition-color);
+}
+.product-widget i:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+} 
+.inner-wrap:hover .layer-img .second {
+    opacity: 1;
+}
+.inner-wrap:hover .product-widget  {
+    bottom: 8%;
+}
+
+/* Hero section */
+#hero {
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../assets/banner/view-banner.jpg') no-repeat center;
+}
+#hero .col-sm-12 {
+    padding: 4rem 0; 
+}
+#hero h1 {
+    color: var(--light-color);
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+
+
+/* Footer section */
+#footer {
+    padding: 3rem 0 1rem;
+    background-color: #e5e5e5;
+} 
+.logo {
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+}
+.email {
+    position: relative;
+}
+.email-box {
+    border: none;
+    padding: 1.5rem 1rem;
+}
+.email-box:focus {
+    border: none;
+}
+.submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+}
+.list-unstyled li a {
+    color: var(--dark-color);
+    font-weight: 500;
+}
+.link-widget li {
+    margin-bottom: 0.75rem;
+}
+.link-widget li a {
+    color: var(--dark-color);
+    transition: var(--transition-color);
+}
+.link-widget li a:hover {
+    color: var(--light-color);
+}
+
+
+
+/* Media query section */
+@media only screen and (max-width: 1199px) {
+    
+    .wish-btn {
+        margin-right: 1rem;
+    }
+}
+@media only screen and (max-width: 991px) {
+    
+    .navbar .container {
+        flex-direction: row-reverse;
+    }
+    #hero h1 {
+        font-size: 2.75rem;
+    }
+}

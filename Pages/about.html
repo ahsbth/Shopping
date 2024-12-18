@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify | About</title>
+    <!-- Favicon link -->
+    <link rel="icon" href="../assets/favicon.png">
+    <!-- Font link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Prata&display=swap"
+        rel="stylesheet">
+    <!-- Remix icon link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Bootsrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Slider link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animation link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custoom css link -->
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    <!-- Header & Navbar section -->
+    <header>
+        <nav class="navbar navbar-expand-lg  py-3">
+            <div class="container ">
+                <!-- Shopping cart section -->
+
+                <button class="btn d-lg-none border-0 cart-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i
+                        class="ri-shopping-cart-2-line"></i></button>
+                <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+                    aria-labelledby="offcanvasResponsiveLabel">
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasResponsiveLabel">Shopping Cart</h3>
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-lg-none">
+                        <div class="red">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="../assets/product/product_01.jpg" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Product-1</h5>
+                                    <h6 class="pt-1">Color: Green</h6>
+                                    <h6 class="pt-1">Quantity: 1</h6>
+
+                                </div>
+                                <div class="col-2 text-end">
+                                    <h5><i class="ri-close-line"></i></h5>
+                                    <h5 class="pt-3">$99</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="red mt-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="../assets/product/product_04.jpg" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Product-1</h5>
+                                    <h6 class="pt-1">Color: Green</h6>
+                                    <h6 class="pt-1">Quantity: 1</h6>
+
+                                </div>
+                                <div class="col-2 text-end">
+                                    <h5><i class="ri-close-line"></i></h5>
+                                    <h5 class="pt-3">$99</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="red mt-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="../assets/product/product_08.jpg" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Product-1</h5>
+                                    <h6 class="pt-1">Color: Green</h6>
+                                    <h6 class="pt-1">Quantity: 1</h6>
+
+                                </div>
+                                <div class="col-2 text-end">
+                                    <h5><i class="ri-close-line"></i></h5>
+                                    <h5 class="pt-3">$99</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-btn-grp mt-4">
+                            <div class="subtotal d-flex justify-content-between py-3">
+                                <h5 class="fw-semibold">Sub Total</h5>
+                                <h5 class="fw-semibold">$199</h5>
+                            </div>
+                            <a href="cart.html"><button class="view-cart view mt-2 text-dark">View Cart</button></a>
+                            <br>
+                            <button class="view-cart">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Logo Section -->
+                <a id="logo" class="navbar-brand" href="#">Shopify</a>
+                <!-- Menu Button section -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <i class="ri-menu-2-line border-0"></i>
+                </button>
+                <!-- Sidebar section -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <!-- Sidebar Header section -->
+                        <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Shopify</h3>
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <!-- Sidebar body section -->
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-lg-center align-items-lg-center flex-grow-1 ">
+                            <li class="nav-item px-lg-3">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-lg-3">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item px-lg-3">
+                                <a class="nav-link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item px-lg-3">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item px-lg-3">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex align-items-center" role="search">
+                            <input class="form-control shadow-none me-3" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="search-btn border-0" type="submit"><i class="ri-search-line"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h1>ABOUT US</h1>
+                    <h4 class="text-light pt-1">Home<i class="ri-arrow-right-s-fill px-1"></i>About</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h2 class="title">OUR HISTORY</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 p-2">
+                    <div class="achieve">
+                        <h2 class="pb-4 fw-semibold">2022</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos molestiae explicabo
+                            libero consectetur modi accusantium, ullam, cum molestias suscipit vero obcaecati
+                            necessitatibus laudantium ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Dignissimos, provident!</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-2">
+                    <div class="achieve">
+                        <h2 class="pb-4 fw-semibold">2023</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos molestiae explicabo
+                            libero consectetur modi accusantium, ullam, cum molestias suscipit vero obcaecati
+                            necessitatibus laudantium ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Dignissimos, provident!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brand">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h2 class="title">BRANDS</h2>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-6 text-center pb-5">
+                    <img src="../assets/brands/adidas.png" alt="">
+                </div>
+                <div class="col-lg-3 col-6 text-center pb-5">
+                    <img src="../assets/brands/nike.png" alt="">
+                </div>
+                <div class="col-lg-3 col-6 text-center pb-5">
+                    <img src="../assets/brands/chanel.png" alt="">
+                </div>
+                <div class="col-lg-3 col-6 text-center pb-5">
+                    <img src="../assets/brands/gucci.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facility">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <h2 class="title">FACILITIES</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="achieve">
+                        <h2 class="pb-1 fw-medium"><i class="ri-customer-service-2-fill"></i></h2>
+                        <h4 class="py-2">Need Assistance?</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos commodi similique sit iusto expedita ducimus!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="achieve">
+                        <h2 class="pb-1 fw-semibold"><i class="ri-bank-card-2-line"></i></h2>
+                        <h4 class="py-2">Safe & Fast</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa magnam minima dicta animi quos mollitia!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="achieve">
+                        <h2 class="pb-1 fw-semibold"><i class="ri-box-3-line"></i></h2>
+                        <h4 class="py-2">Easy Returns & Free</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa magnam minima dicta animi quos mollitia!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="pb-3 logo"><a href="#" class="text-dark">Shopify</a></h3>
+                    <p class="mb-4">96, Lorem Ipsum dolor sit amet, California - 123456</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="ri-phone-fill pe-2"></i>+1 222 3333</a></li>
+                            <li><a href="#"><i class="ri-mail-fill pe-2"></i>info@example.com</a></li>
+                            <li><a href="#"><i class="ri-map-pin-fill pe-2"></i>96, Lorem Ipsum, India</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="pb-3">COMPANY</h4>
+                    <ul class="link-widget p-0">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="pb-3">SHOP</h4>
+                    <ul class="link-widget p-0">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="pb-3">HELP</h4>
+                    <ul class="link-widget p-0">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="pb-3">SUBSCRIBE</h4>
+                    <p class="mb-4">Be the first to get the latest news about trends</p>
+                    <form action="">
+                        <div class="email">
+                            <input type="email" class="form-control email-box shadow-none" placeholder="Your email" required>
+                            <button type="submit" class="submit me-3">JOIN</button>
+                        </div>
+                    </form>
+                    <img src="../assets/payment.png" class="img-fluid pt-3 mt-1" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="container-fluid copyright-section text-center">
+                <p id="copy" class="fs-6">© Copyright All Rights Reserved💚<a href="#" class="text-dark fw-medium">MOUSIN ALI</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap link js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--jquery link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- carousel link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scroll animation link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Gsap Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom js -->
+    <script src="../js/about.js"></script>
+</body>
+
+</html>
